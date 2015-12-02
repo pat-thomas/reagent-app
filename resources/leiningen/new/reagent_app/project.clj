@@ -7,6 +7,7 @@
                  [org.clojure/clojure "1.7.0"]
                  [org.clojure/tools.nrepl "0.2.12"]
                  [http-kit "2.1.18"]
+                 [cheshire "5.5.0"]
 
                  ;; client-side
                  [org.clojure/clojurescript "1.7.170"]

@@ -13,6 +13,9 @@
                            (render filepath data))]
     (main/info "Generating fresh 'lein new' reagent-app project.")
     (templates/->files data
-                       ["project.clj"                       (render-from-data "project.clj")]
-                       ["src/{{sanitized}}/server/core.clj" (render-from-data "server_core.clj")]
-                       ["src/{{sanitized}}/app/core.cljs"   (render-from-data "app_core.cljs")])))
+                       ["project.clj"                              (render-from-data "project.clj")]
+                       ["src/{{sanitized}}/server/core.clj"        (render-from-data "server_core.clj")]
+                       ["src/{{sanitized}}/server/api/command.clj" (render-from-data "api/command.clj")]
+                       ["src/{{sanitized}}/server/api/query.clj"   (render-from-data "api/query.clj")]
+                       ["src/{{sanitized}}/server/api/updates.clj" (render-from-data "api/updates.clj")]
+                       ["src/{{sanitized}}/app/core.cljs"          (render-from-data "app_core.cljs")])))
